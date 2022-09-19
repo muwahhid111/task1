@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Super App</title>
+  </head>
+  <body>
+    <script>
+      // header.after(div2);
+      // div2.style.height = '30px';
+      // div2.style.border = '1px solid black';
+      const header = document.createElement("h1");
+      header.textContent =
+        "Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Voluptateam incidunt cumque in! In, omnis repellemdus.";
+      header.style.border = "1px solid red";
+      const div = document.createElement("div");
+      div.append(header);
+      document.body.append(div);
+
+      const ul = document.createElement("ul");
+      const item_1 = document.createElement("li");
+      const item_2 = document.createElement("li");
+      const item_3 = document.createElement("li");
+
+const link = document.createElement('a');
+const link2 = document.createElement('a');
+const link3 = document.createElement('a');
+
+
+      
+      
+
+      link.setAttribute('href', 'https://learn.javascript.ru/modifying-document#sozdanie-elementa')
+    link.textContent = 'intocode';
+
+    link2.setAttribute('href', 'https://learn.javascript.ru/modifying-document#sozdanie-elementa');
+    link2.textContent = 'google';
+
+    link3.setAttribute('href', 'https://learn.javascript.ru/modifying-document#sozdanie-elementa');
+    link3.textContent = 'instagram'
+
+
+      header.style.width = "30%";
+      header.style.margin = "auto";
+      header.style.borderRadius = "10px";
+
+      ul.style.display = "flex";
+      ul.style.justifyContent = "space-between";
+      ul.style.width = "30%";
+      ul.style.listStyleType = "none";
+      ul.style.margin = "auto";
+      ul.style.marginTop = "10px";
+      ul.style.padding = 0;
+
+      item_1.append(link);
+      item_2.append(link2);
+      item_3.append(link3); 
+      div.append(header);
+      document.body.append(div);
+      ul.append(item_1, item_2, item_3);
+      div.append(ul);
+    </script>
+  </body>
+</html>
